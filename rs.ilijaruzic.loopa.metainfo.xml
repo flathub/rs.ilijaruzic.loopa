@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2025-2026 Ilija Ruzic -->
+<component type="desktop-application">
+  <id>rs.ilijaruzic.loopa</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary=https://github.com/ilijaruzic/loopa-publish/blob/main/LICENSE</project_license>
+
+  <name>Loopa</name>
+  <summary>Phase space simulator for complex dynamical systems</summary>
+
+  <description>
+    <p>
+      Loopa is a phase space simulator for visualizing and analyzing complex dynamical systems.
+    </p>
+    <ul>
+      <li>Built-in models for the Lorenz Attractor, Chua's Circuit, Duffing and Van der Pol Oscillators, Lotka-Volterra equations, RLC Circuits, and mechanical systems</li>
+      <li>Numerical integration using Runge-Kutta methods</li>
+      <li>Phase space visualization of system trajectories, attractors, and chaotic behaviors</li>
+      <li>Poincaré sections for analysis of periodic and chaotic orbits</li>
+      <li>Configurable system parameters to observe mathematical bifurcations</li>
+    </ul>
+  </description>
+
+  <developer id="rs.ilijaruzic">
+    <name>Ilija Ruzic</name>
+  </developer>
+
+  <url type="homepage">https://ilijaruzic.rs/projects/native-dev/loopa</url>
+  <url type="contact">https://ilijaruzic.rs/contact</url>
+  <url type="bugtracker">https://github.com/ilijaruzic/loopa-publish/issues</url>
+
+  <launchable type="desktop-id">rs.ilijaruzic.loopa.desktop</launchable>
+
+  <keywords>
+    <keyword>dynamical systems</keyword>
+    <keyword>phase space</keyword>
+    <keyword>chaos theory</keyword>
+    <keyword>attractor</keyword>
+    <keyword>Lorenz attractor</keyword>
+    <keyword>Runge-Kutta</keyword>
+    <keyword>Poincaré section</keyword>
+    <keyword>bifurcation</keyword>
+    <keyword>oscillator</keyword>
+    <keyword>simulation</keyword>
+    <keyword>mathematics</keyword>
+    <keyword>numerical integration</keyword>
+  </keywords>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Phase space visualization</caption>
+      <image>https://raw.githubusercontent.com/ilijaruzic/loopa-publish/main/res/loopa_store_1.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>System configuration and parameters</caption>
+      <image>https://raw.githubusercontent.com/ilijaruzic/loopa-publish/main/res/loopa_store_2.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Poincaré section analysis</caption>
+      <image>https://raw.githubusercontent.com/ilijaruzic/loopa-publish/main/res/loopa_store_3.png</image>
+    </screenshot>
+  </screenshots>
+
+  <categories>
+    <category>Science</category>
+    <category>Education</category>
+  </categories>
+
+  <releases>
+    <release version="1.4.8" date="2025-05-01" type="stable">
+      <description>
+        <p>Bug fixes and improvements.</p>
+      </description>
+    </release>
+  </releases>
+
+  <content_rating type="oars-1.1"/>
+</component>
