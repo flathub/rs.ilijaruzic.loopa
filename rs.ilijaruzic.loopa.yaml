@@ -32,7 +32,15 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.8/loopa-flatpack.tar.gz
-        sha256: 83cb4464ae7622d90f321cdc44693cdf8e3ef66382a3aa91a7862afbc82397c6
+        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.11/loopa-flatpack-x86_64.tar.gz
+        sha256: 2394ce661be0e1ad0e9ae36fc5bbd223de16d85a48190c75f28269b9ea444a5c
         strip-components: 0
+        only-arches:
+          - x86_64
 
+      - type: archive
+        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.11/loopa-flatpack-aarch64.tar.gz
+        sha256: 28198e450b820ea36f77a5f1d7148e22fa35cf6302d19d1cde51faea92ae8676
+        strip-components: 0
+        only-arches:
+          - aarch64
