@@ -11,7 +11,7 @@ finish-args:
   - --device=dri
   - --share=network
   - --filesystem=xdg-documents
-  - --filesystem=xdg-download
+  - --filesystem=xdg-pictures
   - --talk-name=org.freedesktop.Notifications
 
 modules:
@@ -33,33 +33,6 @@ modules:
     sources:
       - type: archive
         url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.8/loopa-flatpack.tar.gz
-        sha256: a509ec2dafb9319ff03d42adcf0df647a92785ee8f72b88ca61b134e6f4a4f6c
+        sha256: 83cb4464ae7622d90f321cdc44693cdf8e3ef66382a3aa91a7862afbc82397c6
         strip-components: 0
 
-      - type: inline
-        dest-filename: loopa-wrapper.sh
-        contents: |
-          #!/bin/bash
-          exec /app/loopa/loopa "$@"
-
-      - type: inline
-        dest-filename: rs.ilijaruzic.loopa.desktop
-        contents: |
-          [Desktop Entry]
-          Type=Application
-          Name=Loopa
-          Comment=Phase space simulator for complex dynamical systems
-          Exec=loopa %u
-          Icon=rs.ilijaruzic.loopa
-          Categories=Science;Education;
-          Terminal=false
-          StartupWMClass=loopa
-          MimeType=x-scheme-handler/loopa;
-
-      - type: file
-        url: https://raw.githubusercontent.com/ilijaruzic/loopa-publish/main/res/app_icon_512.png
-        sha256: 1ec15872b80e1948989d9823cfae2ba5bb0e61f37adaa59da58d7fefd82a1767
-        dest-filename: rs.ilijaruzic.loopa.png
-
-      - type: file
-        path: rs.ilijaruzic.loopa.metainfo.xml
