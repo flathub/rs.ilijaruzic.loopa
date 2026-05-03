@@ -9,38 +9,30 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --device=dri
+  # Used to load the privacy policy and terms of service displayed in the About page
   - --share=network
+  # Used to save graph data as CSV files when the user chooses to export from the app
   - --filesystem=xdg-documents
+  # Used to save graph images as PNG files when the user chooses to export from the app
   - --filesystem=xdg-pictures
+  # Used to send a desktop notification letting the user know whether an export succeeded or failed
   - --talk-name=org.freedesktop.Notifications
 
 modules:
   - name: loopa
-    buildsystem: simple
-    build-commands:
-      - install -d /app/loopa/lib /app/loopa/data
-      - install -Dm755 loopa /app/loopa/loopa
-      - cp -r lib/. /app/loopa/lib/
-      - cp -r data/. /app/loopa/data/
-      - install -Dm755 loopa-wrapper.sh /app/bin/loopa
-      - install -Dm644 rs.ilijaruzic.loopa.desktop
-          /app/share/applications/rs.ilijaruzic.loopa.desktop
-      - install -Dm644 rs.ilijaruzic.loopa.png
-          /app/share/icons/hicolor/512x512/apps/rs.ilijaruzic.loopa.png
-      - install -Dm644 rs.ilijaruzic.loopa.metainfo.xml
-          /app/share/metainfo/rs.ilijaruzic.loopa.metainfo.xml
+    buildsystem: cmake
 
     sources:
       - type: archive
-        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.11/loopa-flatpack-x86_64.tar.gz
-        sha256: 2394ce661be0e1ad0e9ae36fc5bbd223de16d85a48190c75f28269b9ea444a5c
+        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.15/loopa-flatpak-x86_64.tar.gz
+        sha256: 5c87242dba1f6a96a038fca07d0dbe149620e3c2f37b20fe5fb3b78365abab17
         strip-components: 0
         only-arches:
           - x86_64
 
       - type: archive
-        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.11/loopa-flatpack-aarch64.tar.gz
-        sha256: 28198e450b820ea36f77a5f1d7148e22fa35cf6302d19d1cde51faea92ae8676
+        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.15/loopa-flatpak-aarch64.tar.gz
+        sha256: 9211d81f0f8c6f32c485851fa7cc99aabcc6ef0b9b7b5436d9bc175083569d15
         strip-components: 0
         only-arches:
           - aarch64
