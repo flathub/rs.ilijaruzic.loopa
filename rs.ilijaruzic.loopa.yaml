@@ -9,8 +9,6 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --device=dri
-  # Used to load the privacy policy and terms of service displayed in the About page
-  - --share=network
   # Used to save graph data as CSV files when the user chooses to export from the app
   - --filesystem=xdg-documents
   # Used to save graph images as PNG files when the user chooses to export from the app
@@ -24,15 +22,15 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.15/loopa-flatpak-x86_64.tar.gz
-        sha256: 5c87242dba1f6a96a038fca07d0dbe149620e3c2f37b20fe5fb3b78365abab17
+        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.16/loopa-flatpak-x86_64.tar.gz
+        sha256: 82d42be57bfd52dbc7f68b7e55a1f4d40c9505cf7d0c89649e08f49daf42bfbd
         strip-components: 0
         only-arches:
           - x86_64
 
       - type: archive
-        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.15/loopa-flatpak-aarch64.tar.gz
-        sha256: 9211d81f0f8c6f32c485851fa7cc99aabcc6ef0b9b7b5436d9bc175083569d15
+        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.16/loopa-flatpak-aarch64.tar.gz
+        sha256: edbabefff0adf95613f99a9cd930a36afe31669cce31846e38c18b9b343f60ff
         strip-components: 0
         only-arches:
           - aarch64
