@@ -9,12 +9,6 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --device=dri
-  # Used to save graph data as CSV files when the user chooses to export from the app
-  - --filesystem=xdg-documents
-  # Used to save graph images as PNG files when the user chooses to export from the app
-  - --filesystem=xdg-pictures
-  # Used to send a desktop notification letting the user know whether an export succeeded or failed
-  - --talk-name=org.freedesktop.Notifications
 
 modules:
   - name: loopa
@@ -22,15 +16,15 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.17/loopa-flatpak-x86_64.tar.gz
-        sha256: caac30e9a474798d4d92bc4c564f10c72435fc8d2541f6a584ade4f04bc1c80c
+        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.20/loopa-flatpak-x86_64.tar.gz
+        sha256: 441bbbce0927c1a6a0b48db603f58ad2a26f6414bef520a08f2b6d94a33adde8
         strip-components: 0
         only-arches:
           - x86_64
 
       - type: archive
-        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.17/loopa-flatpak-aarch64.tar.gz
-        sha256: 6291288881585b63763e88574cb19e2d90985e91d368afb6462bcd9592b32e65
+        url: https://github.com/ilijaruzic/loopa-publish/releases/download/v1.4.20/loopa-flatpak-aarch64.tar.gz
+        sha256: 5eea23e4606b3b5e30a3449546f708bc49965611713dc27c767b293f5d1687a1
         strip-components: 0
         only-arches:
           - aarch64
