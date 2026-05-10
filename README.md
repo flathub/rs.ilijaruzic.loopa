@@ -1,6 +1,6 @@
 [![Flathub](https://img.shields.io/flathub/v/rs.ilijaruzic.loopa)](https://flathub.org/apps/rs.ilijaruzic.loopa)
 [![Packages](https://img.shields.io/github/v/tag/ilijaruzic/loopa-packages?label=loopa-packages)](https://github.com/ilijaruzic/loopa-packages/releases)
-[![License](https://img.shields.io/badge/license-Proprietary-red)](https://github.com/ilijaruzic/loopa-packages/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-proprietary-red)](https://loopa.ilijaruzic.rs/policies/LICENSE)
 
 This repository contains the flatpak packaging manifest for Loopa, a cross-platform desktop application developed by Ilija Ruzic.
 
