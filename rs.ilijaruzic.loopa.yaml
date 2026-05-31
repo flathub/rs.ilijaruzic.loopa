@@ -17,14 +17,14 @@ modules:
     sources:
       - type: archive
         url: https://github.com/ilijaruzic/loopa-packages/releases/download/v1.8.10/loopa-flatpak-x86_64.tar.gz
-        sha256: 05a666215c1da67861b521f4b48bf08c44021eb8fa60d9ab36dfffee0821d71e
+        sha256: 79b66dbe663af4d07d6136cb29e0b4e99af6e69191bef8d5b8b4a14c43d4d98c
         strip-components: 0
         only-arches:
           - x86_64
 
       - type: archive
         url: https://github.com/ilijaruzic/loopa-packages/releases/download/v1.8.10/loopa-flatpak-aarch64.tar.gz
-        sha256: d71efbfe3a9283825173ad7dd831d7d8279b9e42ad2def77011179e39a4e3688
+        sha256: 97db3ec798012ba29ed31bce322579619615d596c7beea7ff070ecdb7d2883c1
         strip-components: 0
         only-arches:
           - aarch64
