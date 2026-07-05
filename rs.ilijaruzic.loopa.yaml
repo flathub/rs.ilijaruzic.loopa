@@ -16,15 +16,15 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/ilijaruzic/loopa-packages/releases/download/v1.10.6/loopa-flatpak-x86_64.tar.gz
-        sha256: c23effe115215687943302b0faa1bc9cfa6433aab912101aabf7063e1a96f89d
+        url: https://github.com/ilijaruzic/loopa-packages/releases/download/v1.10.8/loopa-flatpak-x86_64.tar.gz
+        sha256: 2e5ba07e940390a5d874002afe3acbb6f87bf6bdbb6974bd5ccb37161e2b1133
         strip-components: 0
         only-arches:
           - x86_64
 
       - type: archive
-        url: https://github.com/ilijaruzic/loopa-packages/releases/download/v1.10.6/loopa-flatpak-aarch64.tar.gz
-        sha256: 67a5a3b3a0cb37b56c8474c42261c81212b7e5025a7d01804693f2c45e7ea713
+        url: https://github.com/ilijaruzic/loopa-packages/releases/download/v1.10.8/loopa-flatpak-aarch64.tar.gz
+        sha256: 80f058d3438725132391ec1a14d276bed5441cc4678e60399c0b8c6a28da1257
         strip-components: 0
         only-arches:
           - aarch64
